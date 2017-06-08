@@ -6,4 +6,6 @@ get 'pages/home', to: 'pages#home'
 
 get 'pages/about', to: 'pages#about'
 
+resources :articles #cria varios caminhos - ver no terminal
+
 end

@@ -1,0 +1,19 @@
+<h1>Create a new post</h1>
+
+<%= form_for @article do |f| %> <!--@article eh a instance variable do controller que vai receber os valores digitados pelo usuario-->  
+  <p>
+    <%= f.label :title %> <!--rotulo do titulo--> 
+    <br/>
+    <%= f.text_field :title  %> <!--caixa de texto para o usuario escrever-->
+  </p>
+  <p>
+    <%= f.label :description %> <!--rotulo da descricao--> 
+    <br/>
+    <%= f.text_area :description  %> <!--area de texto para o usuario escrever, maior que o titulo-->
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
+
